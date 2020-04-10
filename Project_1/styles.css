@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,400&display=swap');
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --darkblue: hsl(234, 12%, 34%);
+    --grayishblue: hsl(229, 6%, 66%);
+    --verylightgray: hsl(0, 0%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1440px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header styling */
+header {
+    margin: 0 auto;
+    max-width: 520px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.header-container h1 {
+    color: var(--darkblue);
+}
+
+.header-container h1:first-child {
+    font-weight: 200;
+    color: var(--darkblue);
+    margin-top: 45px;
+}
+
+.header-container p {
+    color: var(--grayishblue);
+    margin-top: 10px;
+}
+
+/* Content styling */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.box {
+    background-color: #fff;
+    padding: 25px;
+    width: 350px;
+    margin: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* border-top: 3px solid var(--red); */
+}
+
+.box img {
+    display: block;
+    margin-left: auto;
+    padding-top: 30px;
+}
+
+.box h2 {
+    padding-bottom: 20px;
+}
+
+.box p {
+    margin: 0 10px 0 0;
+    color: var(--grayishblue);
+}
+
+/* Box radius color styling */
+
+#box-1 {
+    border-top: 4px solid var(--cyan);
+}
+
+#box-2 {
+    border-top: 4px solid var(--red);
+}
+
+#box-3 {
+    border-top: 4px solid var(--blue);
+}
+
+#box-4 {
+    border-top: 4px solid var(--orange);
+}
+
+.box-down {
+    transform: translateY(50%);
+}
+
+/* Mobile design */
+
+@media (max-width: 775px) {
+    .box-down {
+        transform: translateY(0%);
+    }
+}
+
+/* footer */
+footer {
+    text-align: center;
+}
