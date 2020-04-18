@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bry-yelo: hsl(71, 73%, 54%);
+    --lyt-gry: hsl(204, 43%, 93%);
+    --grysh-blu: hsl(218, 22%, 67%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.8;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--lyt-gry);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+main {
+    background-color: #fff;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+section {
+    padding: 35px;
+}
+
+.left {
+    background-color: var(--cyan);
+    color: #fff;
+}
+
+.right {
+    background-color: hsl(179, 47%, 52%);
+    color: #fff;
+    line-height: 1.5;
+}
+
+h1 {
+    color: var(--cyan);
+    font-size: 30px;
+}
+
+
+.yellow-text {
+    color: var(--bry-yelo);
+}
+
+p {
+    font-size: 17px;
+    color: var(--grysh-blu);
+}
+
+.row {
+    display: flex;
+    overflow: hidden;
+}
+
+.row>section {
+    flex: 1;
+}
+
+.left p {
+    color: #fff;
+    /* opacity: 0.8; */
+}
+
+.big {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#fadded {
+    opacity: 0.4;
+}
+
+button {
+    background-color: var(--bry-yelo);
+    width: 260px;
+    padding: 15px 60px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 25px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}
