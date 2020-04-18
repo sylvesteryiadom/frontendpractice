@@ -1,7 +1,6 @@
 const email = document.getElementById('email');
 const form = document.querySelector('#form');
-// const errorText = document.getElementById('errorText');
-// const errorIcon = document.querySelector('.error-icon');
+
 
 
 
