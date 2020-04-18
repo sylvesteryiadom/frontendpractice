@@ -24,7 +24,7 @@ body {
 
 .left {
     padding: 0 40px;
-    background-image: url('/images/bg-pattern-desktop.svg');
+    background-image: url('./images/bg-pattern-desktop.svg');
     /* background-size: cover; */
     width: 55%;
 }
@@ -116,6 +116,13 @@ button:hover {
     display: none;
 }
 
+.error-icon {
+    position: absolute;
+    top: 15px;
+    right: 110px;
+    display: none;
+}
+
 form.error .error-icon {
     display: block;
 }
@@ -138,7 +145,7 @@ form.error small {
 
 
 .bg-image {
-    background-image: url('/images/hero-desktop.jpg');
+    background-image: url('./images/hero-desktop.jpg');
     background-size: cover;
     background-position: center;
 }
